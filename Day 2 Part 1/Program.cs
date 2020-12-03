@@ -9,8 +9,8 @@ var Passwords = from DataBaseLine in File.ReadAllLines("Input.txt")
                 {
                     Phrase = DataBaseLine.Split(": ").Last(),
                     PolicyChar = Policy.Split(" ").Last().Single(),
-                    PolicyMin = uint.Parse(PolicyMinMax.Split("-").First()),
-                    PolicyMax = uint.Parse(PolicyMinMax.Split("-").Last()),
+                    PolicyMin = int.Parse(PolicyMinMax.Split("-").First()),
+                    PolicyMax = int.Parse(PolicyMinMax.Split("-").Last()),
                 };
 
 var ValidPasswords = from Password in Passwords
