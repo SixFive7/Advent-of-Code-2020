@@ -38,19 +38,33 @@ foreach (var Row in Map)
 }
 
 
-// Count trees en route.
-var Position = Map[0][0];
-var EncounteredTrees = 0;
-do
+// Count trees en routes.
+var Right1Down1 = CountTreesEnRoute(Position => Position.Right.Below);
+var Right3Down1 = CountTreesEnRoute(Position => Position.Right.Right.Right.Below);
+var Right5Down1 = CountTreesEnRoute(Position => Position.Right.Right.Right.Right.Right.Below);
+var Right7Down1 = CountTreesEnRoute(Position => Position.Right.Right.Right.Right.Right.Right.Right.Below);
+var Right1Down2 = CountTreesEnRoute(Position => Position.Right.Below?.Below);
+
+// Multiply trees.
+uint Result = (uint)(Right1Down1 * Right3Down1 * Right5Down1 * Right7Down1 * Right1Down2);
+Console.WriteLine(Result);
+
+
+
+
+
+int CountTreesEnRoute(Func<Tile, Tile> Move)
 {
-    if (Position.Type == TileType.Tree) { EncounteredTrees++; }
-    Position = Position.Right.Right.Right.Below;
-} while (Position != null);
-Console.WriteLine(EncounteredTrees);
-
-
-
-
+    // Count trees en route.
+    var Position = Map[0][0];
+    var EncounteredTrees = 0;
+    do
+    {
+        if (Position.Type == TileType.Tree) { EncounteredTrees++; }
+        Position = Move(Position);
+    } while (Position != null);
+    return EncounteredTrees;
+}
 
 enum TileType
 {
