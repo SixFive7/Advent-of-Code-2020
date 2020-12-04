@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 
@@ -44,7 +43,7 @@ var EncounteredTrees = 0;
 do
 {
     if (Position.Type == TileType.Tree) { EncounteredTrees++; }
-    Position = Position.Right.Right.Right.Below;
+    Position = Position?.Right?.Right?.Right?.Below;
 } while (Position != null);
 Console.WriteLine(EncounteredTrees);
 
@@ -60,10 +59,10 @@ enum TileType
 class Tile
 {
     internal TileType Type;
-    internal Tile Left;
-    internal Tile Right;
-    internal Tile Above;
-    internal Tile Below;
+    internal Tile? Left;
+    internal Tile? Right;
+    internal Tile? Above;
+    internal Tile? Below;
 
     public override string ToString()
     {
