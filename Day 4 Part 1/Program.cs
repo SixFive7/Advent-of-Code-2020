@@ -7,6 +7,7 @@ using System.Linq;
 var Passports = from RawPassport in File.ReadAllText("Input.txt").Split(Environment.NewLine + Environment.NewLine)
                 select new Passport(RawPassport.Replace(Environment.NewLine, " "));
 
+// Check validity.
 var ValidPasswords = from Passport in Passports
                      where Passport.BirthYear is not null
                      where Passport.IsueYear is not null
@@ -36,17 +37,18 @@ internal class Passport
         {
             var Key = Attribute.Split(":").First();
             var Value = Attribute.Split(":").Last();
-            switch (Key)
+            _ = Key switch
             {
-                case "byr": BirthYear = Value; break;
-                case "iyr": IsueYear = Value; break;
-                case "eyr": ExpirationYear = Value; break;
-                case "hgt": Height = Value; break;
-                case "hcl": HairColor = Value; break;
-                case "ecl": EyeColor = Value; break;
-                case "pid": PassportID = Value; break;
-                case "cid": CountryID = Value; break;
-            }
+                "byr" => BirthYear = Value,
+                "iyr" => IsueYear = Value,
+                "eyr" => ExpirationYear = Value,
+                "hgt" => Height = Value,
+                "hcl" => HairColor = Value,
+                "ecl" => EyeColor = Value,
+                "pid" => PassportID = Value,
+                "cid" => CountryID = Value,
+                _ => throw new NotImplementedException(),
+            };
         }
     }
 }
