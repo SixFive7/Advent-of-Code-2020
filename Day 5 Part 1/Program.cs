@@ -7,7 +7,7 @@ var BoardingPassIDs = File.ReadAllLines("Input.txt")
         .Select((Row, Partition) =>
             Row == 'B' | Row == 'R'
             ? 1024 >> (Partition + 1)
-            : 0
-        ).Sum());
+            : 0)
+        .Sum());
 
 Console.WriteLine(BoardingPassIDs.Max());
