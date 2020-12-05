@@ -3,21 +3,23 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30717.126
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Day 1 Part 1", "Day 1 Part 1\Day 1 Part 1.csproj", "{CBE79BF4-6F3B-4B7F-BD5E-19FB37E36EEF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Day 1 Part 1", "Day 1 Part 1\Day 1 Part 1.csproj", "{CBE79BF4-6F3B-4B7F-BD5E-19FB37E36EEF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Day 1 Part 2", "Day 1 Part 2\Day 1 Part 2.csproj", "{81BBF246-1118-4068-A089-0B595F9742AF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Day 1 Part 2", "Day 1 Part 2\Day 1 Part 2.csproj", "{81BBF246-1118-4068-A089-0B595F9742AF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Day 2 Part 1", "Day 2 Part 1\Day 2 Part 1.csproj", "{AEAE8E23-4837-41D0-82BD-EA8AA3B7F84C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Day 2 Part 1", "Day 2 Part 1\Day 2 Part 1.csproj", "{AEAE8E23-4837-41D0-82BD-EA8AA3B7F84C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Day 2 Part 2", "Day 2 Part 2\Day 2 Part 2.csproj", "{B4A0E6C0-8B1C-4833-A7F0-7A66C0DCF4BA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Day 2 Part 2", "Day 2 Part 2\Day 2 Part 2.csproj", "{B4A0E6C0-8B1C-4833-A7F0-7A66C0DCF4BA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Day 3 Part 1", "Day 3 Part 1\Day 3 Part 1.csproj", "{79BE4DB0-7240-4083-B2AB-12B5A56D1749}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Day 3 Part 1", "Day 3 Part 1\Day 3 Part 1.csproj", "{79BE4DB0-7240-4083-B2AB-12B5A56D1749}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Day 3 Part 2", "Day 3 Part 2\Day 3 Part 2.csproj", "{C8A84D7F-0F4F-4C0E-B7E2-50B8E33B192E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Day 3 Part 2", "Day 3 Part 2\Day 3 Part 2.csproj", "{C8A84D7F-0F4F-4C0E-B7E2-50B8E33B192E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Day 4 Part 1", "Day 4 Part 1\Day 4 Part 1.csproj", "{5D906A4E-ED76-439C-A795-0AF93E76E84C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Day 4 Part 1", "Day 4 Part 1\Day 4 Part 1.csproj", "{5D906A4E-ED76-439C-A795-0AF93E76E84C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Day 4 Part 2", "Day 4 Part 2\Day 4 Part 2.csproj", "{A8483395-2BD0-4C46-8DC4-1D461D55CDC0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Day 4 Part 2", "Day 4 Part 2\Day 4 Part 2.csproj", "{A8483395-2BD0-4C46-8DC4-1D461D55CDC0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Day 5 Part 1", "Day 5 Part 1\Day 5 Part 1.csproj", "{2D96A3DC-3853-4B7C-B67F-E0AEB6AF9DC7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -57,6 +59,10 @@ Global
 		{A8483395-2BD0-4C46-8DC4-1D461D55CDC0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A8483395-2BD0-4C46-8DC4-1D461D55CDC0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A8483395-2BD0-4C46-8DC4-1D461D55CDC0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2D96A3DC-3853-4B7C-B67F-E0AEB6AF9DC7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2D96A3DC-3853-4B7C-B67F-E0AEB6AF9DC7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2D96A3DC-3853-4B7C-B67F-E0AEB6AF9DC7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2D96A3DC-3853-4B7C-B67F-E0AEB6AF9DC7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
